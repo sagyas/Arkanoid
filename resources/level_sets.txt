@@ -2,5 +2,5 @@ e:Easy
 definitions/easy_level_definitions.txt
 h:Hard
 definitions/hard_level_definitions.txt
-t:Sagy
-definitions/sagy_level_definitions.txt
+f:Forest
+definitions/forest_level_definitions.txt

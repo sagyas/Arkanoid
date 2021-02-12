@@ -111,7 +111,7 @@ public class Ass6Game {
 
 // ...
         while (true) {
-            Menu<Task<Void>> menu = new MenuAnimation<Task<Void>>("Arkanoid", ks, gui);
+            Menu<Task<Void>> menu = new MenuAnimation<Task<Void>>("ARKANOID", ks, gui);
             Menu<Task<Void>> subMenu = new MenuAnimation<Task<Void>>("Select Level", ks, gui);
             menu.addSubMenu("s", "Start Game", subMenu);
             AnimationRunner runner = new AnimationRunner(gui);
@@ -168,8 +168,8 @@ public class Ass6Game {
 
 
             HighScoresAnimation scores = new HighScoresAnimation(table, ks, "space");
-            menu.addSelection("h", "Hi scores", new ShowHiScoresTask(runner, scores));
-            menu.addSelection("q", "quit", quit);
+            menu.addSelection("h", "High Scores", new ShowHiScoresTask(runner, scores));
+            menu.addSelection("q", "Quit", quit);
             runner.run(menu);
             // wait for user selection
             Task<Void> task = menu.getStatus();
