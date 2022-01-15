@@ -1,4 +1,4 @@
-# Arkanoid
+# Arkanoid in Java
 
 The classic Arkanoid game,  
 written in Java using OOP principles.
